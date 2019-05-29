@@ -23,6 +23,8 @@ install:
  # 安装
  - npm install
 script:
+ # clean语雀缓存
+ - yuque-hexo clean
  # pull语雀文章
  - yuque-hexo sync
  # 生成静态文件
