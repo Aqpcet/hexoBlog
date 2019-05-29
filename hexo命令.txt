@@ -1,0 +1,42 @@
+在xulin文件夹下输入hexo clean命令
+
+hexo clean    //清除
+
+hexo g   //生成静态文件
+
+gulp    //压缩
+
+hexo s   //本地查看
+
+hexo d   //部署github.io
+
+yuque-hexo sync  //同步语雀文章
+
+yuque-hexo clean   //清除语雀缓存
+
+//阅读全文
+<!-- less --> //封面有图内容没图
+
+<!-- more --> //封面有图内容有图
+
+<span id="inline-blue"> 蓝色 </span>
+
+<span id="inline-green"> 绿色 </span>
+
+<span id="inline-yellow"> 黄色 </span>
+
+<span id="inline-purple"> 紫色 </span>
+
+{% fi  ,   ,  %}
+
+{% cq %}
+{% endcq %}   
+
+<div class="note default"><p>记录生活</p></div>  
+
+
+
+
+
+
+
