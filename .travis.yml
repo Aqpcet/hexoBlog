@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - "v10.15.3"
+branches:
+  only:
+  - master
+notifications:
+  email:
+    recipients:
+      - 792286042@qq.com
+    on_success: always # default: change
+    on_failure: always # default: alway
+cache:
+  directories:
+  - node_modules
+before_install:
+- export TZ='Asia/Shanghai'  # 设置时区
+install:
+ # 安装全局gulp
+ - npm install --global gulp
+ # 安装全局yuque-hexo
+ - npm install --global yuque-hexo
+ # 安装
+ - npm install
+script:
+ # pull语雀文章
+ - yuque-hexo sync
+ # 生成静态文件
+ - gulp d

@@ -158,7 +158,7 @@ baidusitemap:
 deploy:
   type: git
   repository: 
-    coding: https://Aqpcet:eb1a87cedddcbe9c15e55239e950f698bdc299ee@git.dev.tencent.com/Aqpcet/Aqpcet.git
-    github: https://054df6d02a3bda656804aac4d56c74e5b423f569@github.com/Aqpcet/Aqpcet.github.io.git
+    coding: https://Aqpcet:7f9b448e9f1e42e59ab925b5cecc81e3fa27bf58@git.dev.tencent.com/Aqpcet/Aqpcet.git
+    github: https://0ad1aef7493e3a85a02468aa0ee90754159aeb90@github.com/Aqpcet/Aqpcet.github.io.git
   branch: master
   message: "戌女"
