@@ -37,9 +37,11 @@ after_script:
   - git add .
   - git commit -m "Update Blog By TravisCI"
   # Github Pages
-  - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
+  # - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
+  - git push --force --quiet "https://0ad1aef7493e3a85a02468aa0ee90754159aeb90@github.com/Aqpcet/Aqpcet.github.io.git" master:master 
   # Coding Pages
-  - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
+  # - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
+  - git push --force --quiet "https://Aqpcet:7f9b448e9f1e42e59ab925b5cecc81e3fa27bf58@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
 env:
  global:
   # Github Pages
