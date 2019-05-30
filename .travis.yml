@@ -10,7 +10,7 @@ branches:
 notifications:
   email:
     recipients:
-      - ${USER_EMAIL}
+      - aqpcet@foxmail.com
     on_success: always # default: change
     on_failure: always # default: alway
 
