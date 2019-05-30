@@ -12,9 +12,9 @@ notifications:
     on_failure: always # default: alway
 cache:
   directories:
-  - node_modules
+    - node_modules
 before_install:
-- export TZ='Asia/Shanghai'  # 设置时区
+  - export TZ='Asia/Shanghai'  # 设置时区
 install:
  # 安装全局gulp
  # - npm install --global gulp
@@ -28,7 +28,7 @@ script:
  # pull语雀文章
  - yuque-hexo sync
  # 生成静态文件
- - gulp d
+ - gulp
 after_script:
   - cd ./public
   - git init
