@@ -53,5 +53,5 @@ after_script:
   # Github Pages
   # - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
   # Coding Pages
-  - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
+  - git push --force --quiet "https://Aqpcet:${CD_Token}@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
   # - git push --force --quiet "https://Aqpcet:7f9b448e9f1e42e59ab925b5cecc81e3fa27bf58@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
