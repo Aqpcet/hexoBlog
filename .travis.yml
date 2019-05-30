@@ -29,3 +29,21 @@ script:
  - yuque-hexo sync
  # 生成静态文件
  - gulp d
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "Aqpcet"
+  - git config user.email "792286042@qq.com"
+  - git add .
+  - git commit -m "Update Blog By TravisCI"
+  # Github Pages
+  - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
+  # Coding Pages
+  - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
+env:
+ global:
+  # Github Pages
+  - GH_REF: github.com/Aqpcet/Aqpcet.github.io.git
+  # Coding Pages
+  - CD_REF: git.dev.tencent.com/Aqpcet/Aqpcet.git
+   
