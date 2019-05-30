@@ -17,9 +17,9 @@ before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
 install:
  # 安装全局gulp
- - npm install --global gulp
+ # - npm install --global gulp
  # 安装全局yuque-hexo
- - npm install --global yuque-hexo
+ # - npm install --global yuque-hexo
  # 安装
  - npm install
 script:
