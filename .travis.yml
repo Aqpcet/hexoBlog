@@ -1,20 +1,32 @@
 language: node_js
+
 node_js:
   - "v10.15.3"
+env:
+ global:
+  # Github Pages
+  - GH_REF: github.com/Aqpcet/Aqpcet.github.io.git
+  # Coding Pages
+  - CD_REF: git.dev.tencent.com/Aqpcet/Aqpcet.git
+
 branches:
   only:
   - master
+
 notifications:
   email:
     recipients:
       - 792286042@qq.com
     on_success: always # default: change
     on_failure: always # default: alway
+
 cache:
   directories:
     - node_modules
+
 before_install:
   - export TZ='Asia/Shanghai'  # 设置时区
+
 install:
  # 安装全局gulp
  # - npm install --global gulp
@@ -22,6 +34,7 @@ install:
  # - npm install --global yuque-hexo
  # 安装
  - npm install
+
 script:
  # clean语雀缓存
  - yuque-hexo clean
@@ -29,6 +42,7 @@ script:
  - yuque-hexo sync
  # 生成静态文件
  - gulp
+
 after_script:
   - cd ./public
   - git init
@@ -38,14 +52,6 @@ after_script:
   - git commit -m "Update Blog By TravisCI"
   # Github Pages
   # - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
-  - git push --force --quiet "https://0ad1aef7493e3a85a02468aa0ee90754159aeb90@github.com/Aqpcet/Aqpcet.github.io.git" master:master 
   # Coding Pages
-  # - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
-  - git push --force --quiet "https://Aqpcet:7f9b448e9f1e42e59ab925b5cecc81e3fa27bf58@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
-env:
- global:
-  # Github Pages
-  - GH_REF: github.com/Aqpcet/Aqpcet.github.io.git
-  # Coding Pages
-  - CD_REF: git.dev.tencent.com/Aqpcet/Aqpcet.git
-   
+  - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
+  # - git push --force --quiet "https://Aqpcet:7f9b448e9f1e42e59ab925b5cecc81e3fa27bf58@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
