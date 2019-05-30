@@ -28,20 +28,20 @@ before_install:
   - export TZ='Asia/Shanghai'  # 设置时区
 
 install:
- # 安装全局gulp
- # - npm install --global gulp
- # 安装全局yuque-hexo
- # - npm install --global yuque-hexo
- # 安装
- - npm install
+  # 安装全局gulp
+  # - npm install --global gulp
+  # 安装全局yuque-hexo
+  # - npm install --global yuque-hexo
+  # 安装
+  - npm install
 
 script:
- # clean语雀缓存
- - yuque-hexo clean
- # pull语雀文章
- - yuque-hexo sync
- # 生成静态文件
- - gulp
+  # clean语雀缓存
+  - yuque-hexo clean
+  # pull语雀文章
+  - yuque-hexo sync
+  # 生成静态文件
+  - gulp
 
 after_script:
   - cd ./public
@@ -51,7 +51,6 @@ after_script:
   - git add .
   - git commit -m "Update Blog By TravisCI"
   # Github Pages
-  # - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
+  - git push --force --quiet "https://${GH_Token}@${GH_REF}" master:master 
   # Coding Pages
-  - git push --force --quiet "https://Aqpcet:${CD_Token}@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
-  # - git push --force --quiet "https://Aqpcet:7f9b448e9f1e42e59ab925b5cecc81e3fa27bf58@git.dev.tencent.com/Aqpcet/Aqpcet.git" master:master
+  - git push --force --quiet "https://Aqpcet:${CD_Token}@${CD_REF}" master:master
