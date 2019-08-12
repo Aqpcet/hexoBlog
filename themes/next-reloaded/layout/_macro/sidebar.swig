@@ -187,11 +187,13 @@
       {% endif %}
 
 
-      <!-- Aplayer背景音乐 -->
+      {#
+      <!-- Aplayer背景音乐 暂时没有https,先取消音乐-->
       <link rel="stylesheet" href="/dist/APlayer.min.css">
       <div id="aplayer"></div>
       <script type="text/javascript" src="/dist/APlayer.min.js"></script>
       <script type="text/javascript" src="/dist/music.js"></script>
+      #}
 
 
       <!-- 地球仪访问地点显示 -->
