@@ -16,7 +16,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://xu-lin.xyz
+url: https://blog.xu-lin.top
 root: /
 #permalink: :title/
 permalink: :title/:abbrlink.html #站点链接设置
@@ -102,7 +102,7 @@ lazyload:
 
 #APlayer音乐播放
 aplayer:
-  meting: true
+  meting: false
 
 #Extensions:
 # 搜索
@@ -122,7 +122,7 @@ feed:
 
 #Themes: https://hexo.io/themes/
 #主题设置
-theme: next
+theme: next-reloaded
 
 # Security
 ##
