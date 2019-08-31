@@ -43,7 +43,7 @@ after_script:
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - git add .
-  - git commit -m "Update Blog By TravisCI at `Date:+"%Y-%m-%d %H:%M"`"
+  - git commit -m "Update Blog By TravisCI"
   # Coding Pages
   - git push --force --quiet "https://${USER_NAME}:${CD_TOKEN}@${CD_REF}" master:master
   # Github Pages

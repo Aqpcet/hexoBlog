@@ -102,7 +102,7 @@ lazyload:
 
 #APlayer音乐播放
 aplayer:
-  meting: false
+  meting: true
 
 #Extensions:
 # 搜索
