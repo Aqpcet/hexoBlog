@@ -93,7 +93,7 @@ footer:
   #备案
   beian:
     enable: true
-    icp: 粤ICP备18157124号
+    icp: 粤ICP备18157124号-2
 
   # -------------------------------------------------------------
   # Any custom text can be defined here.
